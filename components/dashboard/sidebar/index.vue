@@ -14,6 +14,7 @@
           :item="route"
           :base-path="route.path" />
       </el-menu>
+
     </el-scrollbar>
   </div>
 </template>
@@ -39,6 +40,8 @@ export default {
           }
         })
       }
+
+      console.log(routes)
 
       return routes
     },

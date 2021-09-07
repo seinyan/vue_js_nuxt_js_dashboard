@@ -96,6 +96,46 @@ let routes = [
       title: '_dashboard',
       icon: 'fas fa-chart-line',
     },
+    children: [
+      {
+        name: 'account_account',
+        path: 'account',
+        component: () => import('@/pages/account/account.vue').then(m => m.default || m),
+        meta: {
+          group: null,
+          roles: [ROLE_ADMIN, ROLE_MANAGER, ROLE_USER],
+          activeMenu: '/my',
+          title: '_dashboard_sub',
+          icon: 'fas fa-circle',
+        }
+      },
+      {
+        name: 'account_account',
+        path: 'account',
+        component: () => import('@/pages/account/account.vue').then(m => m.default || m),
+        meta: {
+          group: null,
+          roles: [ROLE_ADMIN, ROLE_MANAGER, ROLE_USER],
+          activeMenu: '/my',
+          title: '_dashboard_sub',
+          icon: 'fas fa-circle',
+        }
+      },
+      {
+        name: 'account_account',
+        path: 'account',
+        component: () => import('@/pages/account/account.vue').then(m => m.default || m),
+        meta: {
+          group: null,
+          roles: [ROLE_ADMIN, ROLE_MANAGER, ROLE_USER],
+          activeMenu: '/my',
+          title: '_dashboard_sub',
+          icon: 'fas fa-circle',
+        }
+      },
+
+
+    ],
   },
 
   {
